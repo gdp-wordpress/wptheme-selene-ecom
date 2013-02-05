@@ -1,0 +1,569 @@
+/*  menu*/
+	
+#catmenucontainer{
+	height:40px;
+	display:block;
+	padding:0px 0 0px 0px;
+	font-size: 12px;
+	font-weight:normal;
+	text-transform:uppercase;
+	background:url(images/catmenu.png) repeat-x;
+	}
+		
+#catmenu{
+	margin:0px auto;
+	padding: 0px 5px;
+	height:40px;
+	overflow:hidden;
+	width:990px;
+		}
+	
+#catmenu ul {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#catmenu li {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-shadow:1px 1px 0px #1F0A15;
+	}
+	
+#catmenu li a, #catmenu li a:link, #catmenu li a:visited {
+	color:#FFDACF;
+	display: block;
+	margin: 0px;
+	padding: 0px 10px ;
+	line-height:40px;
+	}
+
+#catmenu li a:hover, #catmenu li a:active {
+	color: #fff;
+    margin: 0px;
+	padding: 0px 10px ;
+	line-height:40px;
+	text-decoration: none;
+	}
+	
+#catmenu li li a, #catmenu li li a:link, #catmenu li li a:visited {
+	background:#2F1422;
+	width: 150px;
+	color:#FFDACF;
+	font-weight: normal;
+	float: none;
+	margin: 0px;
+	padding: 0px 10px ;
+	line-height:35px;
+	border-bottom: 1px solid #1F0D16;
+	}
+	
+#catmenu li li a:hover, #catmenu li li a:active {
+	background:#421F30;
+	color: #fff;
+	padding: 0px 10px ;
+	line-height:35px;
+	}
+
+#catmenu li ul {
+	z-index: 9999;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 170px;
+	margin: 0px;
+	background:#00150E;
+	}
+
+#catmenu li li { 
+	}
+
+#catmenu li ul a { 
+	width: 140px;
+	}
+
+#catmenu li ul a:hover, #catmenu li ul a:active { 
+	}
+
+#catmenu li ul ul {
+	margin: -36px 0 0 170px;
+	}
+
+#catmenu li:hover ul ul, #catmenu li:hover ul ul ul, 
+#catmenu li.sfhover ul ul, #catmenu li.sfhover ul ul ul {
+	left: -999em;
+	}
+
+#catmenu li:hover ul, #catmenu li li:hover ul, 
+#catmenu li li li:hover ul, #catmenu li.sfhover ul, 
+#catmenu li li.sfhover ul, #catmenu li li li.sfhover ul {
+	left: auto;
+	}
+
+#catmenu li:hover, #catmenu li.sfhover { 
+	position: static;
+	}
+	
+	/*Page menu*/
+
+
+#foxmenucontainer{
+	height:40px;
+	display:block;
+	margin:0px auto;
+	font-size: 12px;
+	background:#0a0a0a url(images/menu.png) repeat-x;
+	text-transform:uppercase;
+
+	}
+#menu{
+	margin:0px auto;
+	padding: 0px;
+	height:40px;
+	overflow:hidden;
+	width:1000px;
+	}
+	
+#menu ul {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#menu li {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+
+	}
+	
+#menu li a, #menu li a:link, #menu li a:visited {
+	color:#7e1313;
+	display: block;
+	margin: 0px;
+	padding: 0px 10px ;
+	line-height:40px;
+	}
+
+#menu li a:hover, #menu li a:active {
+	color: #e32323;
+    margin: 0px;
+	padding: 0px 10px ;
+	line-height:40px;
+	text-decoration: none;
+
+	}
+	
+#menu li li a, #menu li li a:link, #menu li li a:visited {
+	font-size: 12px;
+	background:#EDE9E1;
+	width: 150px;
+	color:#7e1313;
+	font-weight: normal;
+	float: none;
+	margin: 0px;
+	padding: 0px 10px ;
+	line-height:35px;
+	border-bottom: 1px solid #ddd;
+
+	}
+	
+#menu li li a:hover, #menu li li a:active {
+	color: #e32323;
+	background:#fff;
+	padding: 0px 10px ;
+	line-height:35px;
+	}
+
+#menu li ul {
+	z-index: 9999;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 170px;
+	margin: 0px;
+	padding: 0px;
+	background:#0B74CA;
+	}
+
+#menu li li { 
+	}
+
+#menu li ul a { 
+	width: 140px;
+	}
+
+#menu li ul a:hover, #menu li ul a:active { 
+	}
+
+#menu li ul ul {
+	margin: -36px 0 0 170px;
+	}
+
+#menu li:hover ul ul, #menu li:hover ul ul ul, 
+#menu li.sfhover ul ul, #menu li.sfhover ul ul ul {
+	left: -999em;
+	}
+
+#menu li:hover ul, #menu li li:hover ul, 
+#menu li li li:hover ul, #menu li.sfhover ul, 
+#menu li li.sfhover ul, #menu li li li.sfhover ul {
+	left: auto;
+	}
+
+#menu li:hover, #menu li.sfhover { 
+	position: static;
+	}
+
+
+/* Page navi */
+
+.wp-pagenavi{
+	font-size:12px;
+	text-align: center !important;
+}
+
+.wp-pagenavi a, .wp-pagenavi a:link, .wp-pagenavi a:visited {
+	text-decoration: none;
+	background:#FFF!important;
+	border: 1px solid #C1A876 !important;
+	color:#555 !important;
+	padding:3px 7px !important;
+	display: block;
+	text-align: center;
+	float: left;
+	margin-right: 4px;
+
+}
+
+
+.wp-pagenavi a:hover {
+	color: #ffffff;
+}
+
+.wp-pagenavi span.pages {
+
+	display:none;
+}
+
+.wp-pagenavi span.current {
+	text-decoration: none;
+	background:#7F2731 !important;
+	border: 1px solid #2F0005!important;
+	color:#fff !important;
+	padding:3px 7px !important;
+	display: block;
+	text-align: center;
+	float: left;
+	margin-right: 4px;
+
+}
+
+.wp-pagenavi span.extend {
+
+	text-decoration: none;
+	background:#7F2731 !important;
+	border: 1px solid #2F0005!important;
+	color:#fff !important;
+	padding:3px 7px !important;
+	display: block;
+	text-align: center;
+	float: left;
+	margin-right: 4px;
+
+}	
+
+
+/* bottom widgets */
+	
+#bottom{
+
+	margin:0px auto;
+	width:1000px;
+}
+.bottomcover{
+	background:#25111b;
+	margin:0px auto;
+
+}	
+h3.bothead{
+
+	height:20px;
+	font-size:18px;
+	padding:10px 0px 10px 5px;
+	color:#eee;
+	text-shadow:1px 1px 0px #000;
+	
+}
+.botwid{
+	float:left;
+	width:230px;
+	padding-bottom:30px;
+	font-size:12px;
+	list-style:none;
+	margin:20px 0px 0px 15px;
+	color:#ddd;
+	}
+.botwid ul {
+	list-style-type: none;
+	margin:  0px;
+	padding: 0px 0px 0px 0px ;
+
+
+	}
+.botwid li{
+	list-style-type: none;
+	margin: 0 ;
+	padding: 0;
+
+	}
+.botwid ul ul  {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	background-repeat:no-repeat;
+		}
+
+.botwid ul ul ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border:0;
+	}
+
+.botwid ul ul ul ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border:0;
+
+	}
+
+.botwid ul li {
+	height:100%;
+	line-height:18px;
+	clear: left;	
+	width: 230px;
+	list-style-type: none;
+	border-bottom:1px solid #3F2331;
+	}
+	
+.botwid ul li a:link, .botwid ul li a:visited  {
+	
+	color: #CF9BA1;
+	text-decoration: none;
+	padding: 5px 0px 5px 5px;
+	display:block;
+
+	}
+
+.botwid ul li a:hover{
+
+	color: #fff;
+	}
+
+.botwid p{
+	padding: 7px 10px;
+	margin:0;
+	}
+
+.botwid table {
+	width:100%;
+	text-align:center;
+	color:#787d7f;
+	}	
+	
+
+/* SLIDER */
+
+#headbox{
+	height:347px;
+	background:#0a0a0a url(http://ecomoveis.org/wp-content/uploads/2012/08/fundo-body.jpg) center no-repeat;
+}
+
+#slide{
+	height:347px; 
+	overflow: hidden;
+	margin:0px auto ;
+	position: relative; 
+	width:100%;
+
+}
+
+.shadetop{
+	width:960px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:1000;
+	background:url(images/shadetop.png);
+}
+
+.shadebot{
+	width:960px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	z-index:1000;
+	background:url(images/shadebot.png);
+}
+
+.shadeleft{
+	width:150px;
+	height:300px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:1000;
+		background:url(images/shadel.png);
+}
+
+.shaderight{
+	width:150px;
+	height:300px;
+	position:absolute;
+	right:0px;
+	top:0px;
+		z-index:1000;
+		background:url(images/shader.png);
+}
+
+
+#slidebox{
+	height:381px; 
+	overflow: hidden;
+	position: relative; 
+	background:url(http://ecomoveis.org/wp-content/uploads/2012/08/fundo-body.jpg) repeat-x;
+
+}
+#	{
+	background:url(http://ecomoveis.org/wp-content/uploads/2012/08/fundo-body.jpg);
+	margin:0px auto;
+	height: 380px; 
+	width:100%;
+}
+#featureCarousel{
+
+	margin:0px auto;
+	height: 380px; 
+	width:900px;
+    position:relative;
+}
+
+.prevb{
+	float:left;
+	width:53px;
+	height:53px;
+	z-index:200;
+	background:url(images/left.jpg);
+	position:absolute;
+	left:-50px;
+	bottom:130px;
+	cursor:pointer;
+	}
+	
+.nextb{
+    float:right;
+	width:53px;
+	height:53px;
+	z-index:200;
+	background:url(images/right.jpg);
+	position:absolute;
+	right:-50px;
+	bottom:130px;
+	display:block;
+	cursor:pointer;
+	}
+	
+.slimg{
+
+	width:450px;
+	height:200px;
+}
+	
+	
+	/********************
+ * FEATURE CAROUSEL *
+ ********************/
+
+#featureCarousel img {
+	border-style:inset;
+	border:5px solid #000;
+}
+#featureCarousel .feature {
+    position:absolute;
+    top:-1000px;
+    left:-1000px;
+    cursor:pointer;
+	padding-bottom:25px;
+	background:url(images/feature.png) bottom center no-repeat;
+}
+
+
+#featureCarousel .feature > div {
+    position:absolute;
+    bottom:25px;
+    left:10px;
+    background-color:black;
+    width:450px;
+}
+#featureCarousel .feature > div p {
+    margin:0;
+    padding:5px 10px;
+    font-weight:bold;
+    font-size:14px;
+    color:#ddd;
+	text-align:center;
+}
+#featureCarousel .blipsContainer {
+    position:absolute;
+    color:white;
+    right:450px;
+    bottom:5px;
+    padding:0;
+    margin:0;
+
+}
+#featureCarousel .blipsContainer .blip {
+	display:none;
+    margin:3px;
+    height:14px;
+    width:14px;
+    color:white;
+    text-align:center;
+    font-size:10px;
+    border:1px dotted black;
+}
+#featureCarousel .blipsContainer .blipSelected {
+    color:white;
+    font-weight:bold;
+    background-color:black;
+}
+	
+.fblock{
+	color:#5F4B3B;
+	border-bottom:1px solid #eee;
+	padding:5px 0px!important;
+	display:inline-block;
+	width:290px;
+	margin:0px 5px;
+}
+
+.fblock a{
+	color:#602D46;
+}
+
+.thumbim{
+	float:left;
+	width:80px;
+	height:60px;
+	margin-right:10px;
+}
+	
