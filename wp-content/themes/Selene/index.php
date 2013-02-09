@@ -1,8 +1,30 @@
 <?php get_header(); ?>
 
 <div id="content">
+
+<?php if (is_home()){
+	?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="coin-slider.js"></script>
+	<link rel="stylesheet" href="coin-slider-styles.css" type="text/css" />
+	<div id="games">
+<? } ?>
+
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
+
+<?php if (is_home()){
+	?>
+		<a href="<?php the_permalink() ?>">
+			<?php the_post_thumbnail(array(545,250));?>
+			<span>
+				<?php the_title(); ?>
+			</span>
+		</a>
+	<?
+}else{
+?>
+
 <div class=" box <?php if (++$counter % 2 == 0) { echo "altbox"; }?>" id="post-<?php the_ID(); ?>">
 
 <div class="cover">
@@ -18,13 +40,23 @@
 </div>
 <div class="pmeta">
 	<span class="comm"><?php comments_popup_link('0 Comment', '1 Comment', '% Comments'); ?></span>	
-	<div class="rmore"><a href="<?php the_permalink() ?>">Read Full</a></div>
+	<div class="rmore"><a href="<?php the_permalink() ?>">Leia mais</a></div>
 </div>
 </div>	
 
 </div>
-
+<? } ?>
 <?php endwhile; ?>
+
+<?php if (is_home()){
+	?>
+	</div>
+	
+		<script>
+			$('#games').coinslider();
+		</script>
+<? } ?>
+
 <div class="clear"></div>
 <div id="navigation">
 <?php if(function_exists('wp_pagenavi')) : ?>

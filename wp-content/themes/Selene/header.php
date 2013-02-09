@@ -53,6 +53,12 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 wp_head(); 
 ?>
+<?php if (is_home()){
+	?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="coin-slider.js"></script>
+	<link rel="stylesheet" href="coin-slider-styles.css" type="text/css" />
+<? } ?>
 </head>
 <body <?php body_class(); ?>>
 
@@ -66,18 +72,21 @@ wp_head();
 
 <div class="wrap">
 <div class="blogname">
-	<h1><a href="<?php bloginfo('siteurl');?>/" title="<?php bloginfo('name');?>"> <?php bloginfo('name');?></a></h1>
-	<h2><?php bloginfo('description'); ?></h2>
+	
 </div>
-<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 </div>
 
 </div>
 
+<div id="headbox">
+	<a href="<?php bloginfo('siteurl');?>/" title="<?php bloginfo('name');?>">
+		<img src="/wp-content/themes/Selene/images/topo.png" style="margin-top: -100px; margin-left: 150px">
+	</a>
+</div>
 <?php 
-if (is_front_page()) { 
-include (TEMPLATEPATH . '/slide.php'); 
-} 
+#if (is_front_page()) { 
+#	include (TEMPLATEPATH . '/slide.php'); 
+#} 
 ?>
 
 <div id="catmenucontainer">

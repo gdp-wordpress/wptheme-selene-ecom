@@ -381,7 +381,7 @@ h2.stitle a{
 
 
 #content {
-	float:left;
+	float:right;
 	width: 685px;
 	height:100%;
 	padding:0px 0px 0px 0px;
@@ -619,7 +619,7 @@ h2.stitle a{
 
 /* right column */
 .right{
-	float:right;
+	float:left;
 	width:305px;
 	padding:0px 0px 0px 0;
 	display:inline;
